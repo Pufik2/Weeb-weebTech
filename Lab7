@@ -1,0 +1,10 @@
+<title>Крымгужин Т.З. ПИ-320</title>
+<html>
+<head>
+    <meta charset="utf-8">
+    <h1>Задание №7</h1>
+<script language="javascript">
+function sortirovka(){
+uroki = new Array("Геометрия", "Информатика", "Алгебра", "Физика", "Русский язык", "История", "Литература","Обществознание","география");
+tehnich = uroki.slice(0,4);
+human = uroki.slice(4,9);
