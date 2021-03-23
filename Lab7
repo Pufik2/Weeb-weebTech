@@ -8,3 +8,17 @@ function sortirovka(){
 uroki = new Array("Геометрия", "Информатика", "Алгебра", "Физика", "Русский язык", "История", "Литература","Обществознание","география");
 tehnich = uroki.slice(0,4);
 human = uroki.slice(4,9);
+document.write("Названия предметов: ", uroki, "<br>")
+document.write("Точные науки - ", tehnich);
+document.write("<br>");
+document.write("Гуманитарные науки - ", human);
+}
+</script>
+</head>
+<body>
+<script language="javascript">
+sortirovka();
+</script><br><br>
+<a  href="index.php"><button>Назад к заданиям</button></a>
+</body>
+</html>
