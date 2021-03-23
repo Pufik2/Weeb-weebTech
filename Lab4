@@ -19,3 +19,18 @@ alert("Максимальное число - y");
 else{
 alert("Максимальное число - x");
 }
+var password, p;
+password = "12345";
+pass = prompt("Введите правильный пароль",'');
+if (password == pass){
+alert("Пароль верен");
+}
+else{
+alert("Неправильно введенный пароль");
+}
+document.writeln("Пароль был вот таким : " + password +". Неповезло - неповезло");
+</script>
+</body>
+<br><br>
+<a  href="index.php"><button>Назад к заданиям</button></a>
+</html>
