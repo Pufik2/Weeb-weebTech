@@ -1,0 +1,19 @@
+<title>Крымгужин Т.З. ПИ-320
+</title>
+<html>
+      <style>
+    table,tr,td {border: 2px solid green;}
+  </style>
+
+<body>
+    <h1>Задание №6. Степени двойки</h1>
+    <meta charset="utf-8">
+<script language = "javascript" type = "text/javascript">
+
+document.write("<table border='1'><tr><td>Степень</td><td>Результат</td></tr>");
+
+for (var i = 0; i < 11; i++){
+
+document.write ("<tr><td>2<sup><small>" + i + "</small></sup></td><td>" + Math.pow(2, i) + "</td></tr>");
+
+}
