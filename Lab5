@@ -1,0 +1,20 @@
+<title>Крымгужин Т.З. ПИ-320
+</title>
+<html>
+<head>
+</head>
+<body>
+    <meta charset="utf-8">
+<h1>Задание №5</h1>
+<script language = "javascript" type = "text/javascript">
+var width = 10;
+function line(){
+document.writeln(`<hr align='center' width='${width}'>`);
+}
+for (var i=0; i<10; i++){
+line();
+width += 10;
+}
+</script>
+</body>
+</html>
