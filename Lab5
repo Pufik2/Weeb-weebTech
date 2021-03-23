@@ -16,5 +16,6 @@ line();
 width += 10;
 }
 </script>
-</body>
+</body><br><br>
+<a href="index.php"><button>Назад к заданиям</button></a>
 </html>
