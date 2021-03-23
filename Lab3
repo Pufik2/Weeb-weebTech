@@ -1,0 +1,22 @@
+<title>Крымгужин Т.З. ПИ-320
+</title>
+<html>
+<body>
+<p> Задание №3 </p>
+	<meta charset="utf-8">
+<script type="text/javascript">
+let name = prompt("Введите сюда своё имя","Введите имя", '');
+document.writeln("Ваше имя : " +name);
+</script>
+<script type="text/javascript">
+if (confirm("Начать заново?")){
+alert("Не надоело?");
+}
+else{
+alert("Ну и правильно!");
+}
+</script>
+</body>
+<br><br>
+<a  href="index.php"><button>Назад к заданиям</button></a>
+</html>
