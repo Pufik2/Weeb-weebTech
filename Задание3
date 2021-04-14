@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>Крымгужин Т.З. ПИ-320</title>
+        <meta charset="utf-8">
+        <h1>Задание №3</h1>
+    </head>
+    <body>
+        <button class="top">Вверх</button>
+        <button class="left">Влево</button>
+        <button class="right">Вправо</button>
+        <button class="bottom">Вниз</button><br><br>
+        <a  href="index.php"><button>Назад к заданиям</button></a>
+        <br>
+        <div class="control_block_container">
+            <div id="img" style="position:absolute; top:100px; left:100px"> <img src="img.png" width="300" height="300" alt="pikcha">
+            </div>
+        </div>
+        <script type="text/javascript" src="jquery-3.6.0.js"></script>
+            <script type="text/javascript">
+            $(".left").click(function(){
+                $("#img").animate({left: "-=100"}, 1000)
+            });
+            $(".right").click(function(){
+                $("#img").animate({left: "+=100"}, 1000)
+            });
+            $(".top").click(function(){
+                $("#img").animate({top: "-=100"}, 1000)
+            });
+            $(".bottom").click(function(){
+                $("#img").animate({top: "+=100"}, 1000)
+            });
+        </script>
+    </body>
+</html>
