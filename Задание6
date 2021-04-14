@@ -1,0 +1,66 @@
+<html>
+	  <head>
+	    <title>Крымгужин Т.З. ПИ-320</title>
+        <meta charset="utf-8">
+        <h1>Задание №6</h1>
+	    <script type="text/javascript" src="jquery-3.6.0.js"></script>
+	  </head>
+	  <body>
+	    <h3>Ваш возраст?</h3>
+	    <form>
+	      1)<button id="1">Меньше 18</button>
+	      <label id="label1"></label><br><br>
+	      2)<button id="2">18-35</button>
+	      <label id="label2"></label><br><br>
+	      3)<button id="3">36-50</button>
+	      <label id="label3"></label><br><br>
+	      4)<button id="4">50+</button>
+	      <label id="label4"></label>
+	    </form>
+	    <button id="button">Высчитать проценты</button><br><br>
+	    <a  href="index.php"><button>Назад к заданиям</button></a><br><br>
+	    <output id="pr1" type="text"></output><br><br>
+	    <output id="pr2" type="text"></output><br><br>
+	    <output id="pr3" type="text"></output><br><br>
+	    <output id="pr4" type="text"></output><br><br>
+	    <script type="text/javascript">
+	      var a = 0;
+	      var b = 0;
+	      var c = 0;
+	      var d = 0;
+	      var summa = 0;
+	      $(document).ready(function(){
+	        $("#button").click(function(){
+	          document.getElementById("pr1").value = "Первый ответ. Процентное соотношение "+(a/summa)*100+"%";
+	          document.getElementById("pr2").value = "Второй ответ. Процентное соотношение "+(b/summa)*100+"%";
+	          document.getElementById("pr3").value = "Третий ответ. Процентное соотношение "+(c/summa)*100+"%";
+	          document.getElementById("pr4").value = "Четвертый ответ. Процентное соотношение "+(d/summa)*100+"%";
+	        });
+	        $("#1").click(function(){
+	          a +=1;
+	          summa +=1;
+	          $("#label1").text("Проголосовавших "+a);
+	          return false;
+	        });
+	        $("#2").click(function(){
+	          b +=1;
+	          summa +=1;
+	          $("#label2").text("Проголосовавших "+b);
+	          return false;
+	        });
+	        $("#3").click(function(){
+	          c +=1;
+	          summa +=1;
+	          $("#label3").text("Проголосовавших "+c);
+	          return false;
+	        });
+	        $("#4").click(function(){
+	          d +=1;
+	          summa +=1;
+	          $("#label4").text("Проголосовавших "+d);
+	          return false;
+	        });
+	      });
+	    </script>
+	  </body>
+	</html>
