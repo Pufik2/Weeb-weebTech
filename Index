@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>Крымгужин Т.З. ПИ-320
+</title>
+</head>
+<body>
+    <h1> Крымгужин Тимур </h1>
+Лабораторная работа №1:
+<ul>
+<li><a href="Lab1.html">Задание 1</a></li>
+<li><a href="Lab2.html">Задание 2</a></li>
+<li><a href="Lab3.html">Задание 3</a></li>
+<li><a href="Lab4.html">Задание 4</a></li>
+<li><a href="Lab5.html">Задание 5</a></li>
+<li><a href="Lab6.html">Задание 6</a></li>
+<li><a href="Lab7.html">Задание 7</a></li>
+</ul>
+Лабораторная работа №2:
+<ul>
+<li><a href="Lab1.2.html">Задание 1</a></li>
+<li><a href="Lab2.2.html">Задание 2</a></li>
+<li><a href="Lab3.2.html">Задание 3</a></li>
+<li><a href="Lab4.2.html">Задание 4</a></li>
+<li><a href="Lab5.2.html">Задание 5</a></li>
+<li><a href="Lab6.2.html">Задание 6</a></li>
+<li><a href="Lab7.2.html">Задание 7</a></li>
+</ul>
+</body>
+</html>
