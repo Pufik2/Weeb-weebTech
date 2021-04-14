@@ -1,0 +1,14 @@
+<html>
+    <head>
+        <title>Крымгужин Т.З. ПИ-320</title>
+        <meta charset="utf-8">
+        <h1>Задание №1</h1>
+    </head>
+    <body>
+        Выберите фон:<br><br>
+        <button onclick="document.body.style.backgroundColor = '#a8ffde';">Салатовый</button><br><br>
+        <button onclick="document.body.style.backgroundColor = '#ff6161';">Коралловый</button><br><br>
+        <button onclick="document.body.style.backgroundColor = '#ffffff';">Стандартный</button><br><br>
+        <a  href="index.php"><button>Назад к заданиям</button></a>
+    </body>
+</html>
