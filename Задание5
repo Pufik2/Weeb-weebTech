@@ -1,0 +1,45 @@
+<html>
+	  <head>
+	    <title>Крымгужин Т.З. ПИ-320</title>
+        <meta charset="utf-8">
+        <h1>Задание №5</h1>
+	    <script type="text/javascript" src="jquery-3.6.0.js"></script>
+	  </head>
+	  <body>
+	      <a  href="index.php"><button>Назад к заданиям</button></a>
+	      <div style="position:absolute; top:100px; left:400px"><img src="img.png" width="300" height="300" alt="dednedead" id="todo"></div>
+	    <script type="text/javascript">
+	      var todo = document.getElementById('todo');
+	      function getCoords(elem) {
+	        var box = elem.getBoundingClientRect();
+	        return {
+	          top: box.top + pageYOffset,
+	          left: box.left + pageXOffset
+	        };
+	      }
+	      todo.onmousedown = function(e){
+	        var coords = getCoords(todo);
+	        var shiftX = e.pageX - coords.left;
+	        var shiftY = e.pageY - coords.top;
+	        todo.style.position = 'absolute';
+	        document.body.appendChild(todo);
+	        moveAt(e);
+	        todo.style.zIndex = 1000;
+	        function moveAt(e) {
+	          todo.style.left = e.pageX - shiftX + 'px';
+	          todo.style.top = e.pageY - shiftY + 'px';
+	        }
+	        document.onmousemove = function(e) {
+	          moveAt(e);
+	        };
+	        todo.onmouseup = function() {
+	          document.onmousemove = null;
+	          todo.onmouseup = null;
+	        };
+	      }
+	      todo.ondragstart = function() {
+	        return false;
+	      };
+	    </script>
+	  </body>
+	</html>
