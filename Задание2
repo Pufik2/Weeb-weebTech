@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <title>Крымгужин Т.З. ПИ-320</title>
+        <meta charset="utf-8">
+        <h1>Задание №2</h1>
+        <style>
+        .text:focus {
+            border: solid #ff0000;
+            outline: none;
+        }
+        </style>
+    </head>
+    <body>
+        <form name="user">
+            <h3>Заполните поля <i>(* обязательные)</i>:</h3>
+            Ваше имя (*): <br>
+            <input type="text" name="n" size="45" class="text"><br><br> 
+            Пароль (*): <br>
+            <input type="text" name="p" size="45" class="text"><br><br>
+            Подтверждение пароля (*): <br>
+            <input type="text" name="pp" size="45" class="text"><br><br> 
+            E-mail (*): <br>
+            <input type="text" name="e" size="45" class="text"><br><br>
+            Тема сообщения: <br>
+            <input type="text" name="t" size="45" class="text"><br><br>
+            Сообщение (*): <br>
+            <textarea name="textarea" size="45"></textarea><br><br>
+            <input type="button" value="Отправить" onClick="doSend()">
+            <input type="reset" value="Очистить"><br><br>
+        </form>
+        </p>
+        <script language="JavaScript">
+        function doSend(){
+            var v=document.user.e.value.indexOf("@",1);
+            if(document.user.n.value==""){
+                alert('Вы должны заполнить поле Ваше имя');
+                document.user.n.focus(); 
+            }else if(document.user.p.value==""){
+                alert('Вы должны заполнить поле Пароль');
+                document.user.p.focus(); 
+            }else if(document.user.p.value.length<4){
+                alert('Пароль содержит менее 4-х символов');
+                document.user.p.focus();
+            }else if(document.user.pp.value==""){
+                alert('Вы должны заполнить поле Подтверждение пароля');
+                document.user.pp.focus(); 
+            }else if(document.user.pp.value!=document.user.p.value){
+                alert('Пароли не совпадают');
+                document.user.p.focus();
+            }else if(document.user.e.value==""){
+                alert('Вы должны заполнить поле Email');
+                document.user.e.focus();
+            }else if(v==-1){
+                alert('Адрес e-mail указан неверно');
+                document.user.e.focus();
+            }else if(document.user.textarea.value==""){
+                alert('Вы должны заполнить поле Сообщение');
+                document.user.textarea.focus();
+            }else if(document.user.textarea.value.length<10){
+                alert('Сообщение содержит менее 10 символов');
+                document.user.textarea.focus();
+            }else{
+                document.user.submit();
+            }
+        }
+        </script>
+        <a  href="index.php"><button>Назад к заданиям</button></a>
+    </body>
+</html>
