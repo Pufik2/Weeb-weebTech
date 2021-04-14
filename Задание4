@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <title>Крымгужин Т.З. ПИ-320</title>
+    <meta charset="utf-8">
+    <h1>Задание №4</h1>
+  </head>
+  <body onload="mouse_position()">
+    <form name="Form1">
+      Координаты курсора: <input type="text" name="coordx">;<input type="text" name="coordy"><br><br>
+      <a  href="index.php"><button>Назад к заданиям</button></a>
+    </form>
+    <script type="text/javascript" src="jquery-3.6.0.js"></script>
+    <script type="text/javascript">
+      $("body").mousemove(function(e) {
+        document.Form1.coordx.value = e.pageX;
+        document.Form1.coordy.value = e.pageY;
+        })
+    </script>
+  </body>
+</html>
