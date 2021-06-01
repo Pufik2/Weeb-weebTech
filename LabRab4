@@ -158,3 +158,31 @@ $( function() {
                 <h3>Cropp</h3> <div>
                 <p>Cropp — модный бренд современной уличной одежды предлагающий женские и мужские коллекции, дополненные широким ассортиментом аксессуаров и обуви.  </div> 
                 </span><br>
+<h3>Перечень товаров</h3>
+                <div id="tabs" style="width: 90%;"> <ul> 
+                    <li><a href="#tabs-1">SHEIN</a></li> 
+                    <li><a href="#tabs-2">OZON</a></li> 
+                    <li><a href="#tabs-3">Cropp</a></li> </ul> 
+                    <div id="tabs-1" align="center" style="background-color: #7fffd4;"> <h2>Распродажа!! три по цене двух </h2>  
+                      <img src="1kaptinka.jpg" alt="" style=" width: 30%; "height="500">
+                      <img src="6046669210.jpg" alt="" style=" width: 35%; "height="500">
+                      <img src="8365D-09M-050_4.jpg" alt="" style=" width: 30%;" height="500">
+                      <p>SHEIN предоставляет акцию на очень короткое время!<br>
+                      <p>Только сегодня и только сейчас вы можете заказать три красивые худи по цене двух<br>
+                      <p>Акция распространяется на все размеры)))0<br>
+                        <p>Цена: 5000р</p><br>
+                        <button id="btn1">Оформить заказ</button></p> 
+                      </div>
+                      <div id="tabs-2" align="center" style="background-color: #ffc0cb;"> <h2>Уникальный товар, недоступный нигде</h2> 
+                        <img src="apuFpiXzBLE.jpg" alt="" style=" width: 40%;">
+                        <p>OZON представляет новинку в ассортименте худи, торопитесь, предложение ограничено*<br>
+                        <p>*Доступный размер: L<br>
+                          <p>Цена: 6000р</p><br>
+                          <button id="btn2">Оформить заказ</button></p> 
+                        </div> 
+                        <div id="tabs-3" align="center" style="background-color: #F0FFF0;"> <h2>Еще один товар, который нигде не найти</h2> 
+                            <img src="7756G-99X-050_2.jpg" alt="" style=" width: 30%;">
+                            <p>Cropp представила сентацию на рынке красивых кофточек, Как жаль, что остался только M размер<br>
+                              <p>Цена: 10000р</p><br>
+                              <button id="btn3">Оформить заказ</button></p> 
+                            </div>
