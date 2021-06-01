@@ -28,3 +28,30 @@
       $("#btn3").click(function(){ 
         $( "#dialog3" ).dialog('open'); 
       })
+$(function(){
+ $('.zak').tooltip();
+});
+      $('#slider1').slider({
+            min: 1,
+            max: 5,
+        change: function (event, ui){
+            var val = $('#slider1').slider('value');
+            $('#sliderValue1').html(val);
+        }
+    });
+    $('#slider2').slider({
+            min: 1,
+            max: 5,
+        change: function (event, ui){
+            var val = $('#slider2').slider('value');
+            $('#sliderValue2').html(val);
+        }
+    });
+    $('#slider3').slider({
+            min: 1,
+            max: 5,
+        change: function (event, ui){
+            var val = $('#slider3').slider('value');
+            $('#sliderValue3').html(val);
+        }
+    });
