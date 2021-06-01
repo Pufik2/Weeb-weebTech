@@ -74,3 +74,72 @@ $(function(){
 };
     $.datepicker.setDefaults( $.datepicker.regional[ "ru" ] );
           $(".date").datepicker({ });
+$( function() {
+    var availableTags = [
+      "Пушкина 34",
+      "Мушкина 75",
+      "Клюшкина 55",
+      "Путина 6",
+    ];
+    $( "#adress" ).autocomplete({
+      source: availableTags
+    });
+  } );
+   $( function() {
+    var d2Tags = [
+      "Мингажева 10",
+      "Ленина 6",
+      "Васнецова 9",
+      "Кузнецова 56",
+    ];
+    $( "#adress2" ).autocomplete({
+      source: d2Tags
+    });
+  } );
+   $( function() {
+    var d3Tags = [
+      "Никитина 4",
+      "Антохина 5",
+      "Артемова 5",
+      "Егорова 7",
+    ];
+    $( "#adress3" ).autocomplete({
+      source: d3Tags
+    });
+  } );
+    $(".puy" ).click(function(){
+        $('.dia').dialog('open'); })
+        $(function() {
+	
+    $('.dia').dialog({
+		buttons: [{text: "да", click: function() {
+		    $( ".yes" ).dialog('open'),$('.dia').dialog('close'),$('#dialog1').dialog('close');   
+        }
+		},
+                  {text: "Отмена", click: function() {$('.dia').dialog("close")}}]
+	});
+});
+    $('.dia').dialog({ autoOpen: false, width: 300, buttons:{
+        "да": function(){ 
+            $( ".yes" ).dialog('open'),$('.dia').dialog('close');   
+        }
+    }})
+    $( ".yes" ).dialog({autoOpen: false, width: 300});
+    $("#price1" ).click(function(){
+    var k = $('#slider1').slider('value');
+    var price = 5000*k;
+    document.getElementById('price1').value = price;
+  })
+  $("#price2" ).click(function(){
+    var k = $('#slider2').slider('value');
+    var price = 6000*k;
+    document.getElementById('price2').value = price;
+  })
+  $("#price3" ).click(function(){
+    var k = $('#slider3').slider('value');
+    var price = 10000*k;
+    document.getElementById('price3').value = price;
+  })
+
+  } )
+  
