@@ -186,3 +186,58 @@ $( function() {
                               <p>Цена: 10000р</p><br>
                               <button id="btn3">Оформить заказ</button></p> 
                             </div>
+			    <div id="dialog1"  title="Диалоговое окно покупки в SHEIN">
+                                <form action="">
+                                   <p>ФИО</p> <input type="text"><br><br>
+                                  <p>Дата заказа</p> <input type="text"  title="Выберите текущую" class="date" id="zak"><br><br>
+                                 <p>Адрес пункта доставки (работает, Например Пушкина)</p> <input type="text"  id="adress"><br><br>
+                                  <p>Размер</p><br>
+                                  <select id="razmer1">
+                                      <option>Xl</option>
+                                      <option>Xxl</option>
+                                      <option>l</option>
+                                      <option>M</option>
+                                  </select>
+                                  <p>Количество штук</p> <p style="display: inline;" id="sliderValue1"></p>
+                                  <br><br>
+                                  <div id="slider1" style="width: 100%;"> </div> <br>
+                                 <p>Сумма</p> <input type="text"id="price1" title="Нажмите для просмотра общей суммы" ><br><br>
+                                </form>
+                                <input type="button" class="puy" value="Купить">
+                              </div>
+                              <div id="dialog2" title="Диалоговое окно покупки в OZON">
+                                <form action="">
+                                   <p>ФИО</p> <input type="text"><br><br>
+                                  <p>Дата заказа</p> <input type="text"  title="Выберите текущую" class="date" id="zak2"><br><br>
+                                 <p>Адрес пункта доставки (работает, Например Кузнецова или Мингажева)</p> <input type="text"  id="adress2"><br><br>
+                                  <p>Размер</p><br>
+                                  <select id="razmer1">
+                                      <option>l</option>
+                                  </select>
+                                  <p>Количество штук</p> <p style="display: inline;" id="sliderValue2"></p>
+                                  <br><br>
+                                  <div id="slider2" style="width: 100%;"> </div> <br>
+                                 <p>Сумма</p> <input type="text"id="price2" title="Нажмите для просмотра общей суммы" ><br><br>
+                                </form>
+                                <input type="button" class="puy" value="Купить">
+                              </div>
+                              <div id="dialog3" title="Диалоговое окно покупки в Cropp">
+                                <form action="">
+                                   <p>ФИО</p> <input type="text"><br><br>
+                                  <p>Дата заказа</p> <input type="text"  title="Выберите текущую" class="date" id="zak3"><br><br>
+                                 <p>Адрес пункта доставки (работает, Например Егорова или Артемова)</p> <input type="text"  id="adress3"><br><br>
+                                  <p>Размер</p><br>
+                                  <select id="razmer3">
+                                      <option>M</option>
+                                  </select>
+                                  <p>Количество штук</p> <p style="display: inline;" id="sliderValue3"></p>
+                                  <br><br>
+                                  <div id="slider3" style="width: 100%;"> </div> <br>
+                                 <p>Сумма</p> <input type="text"id="price3" title="Нажмите для просмотра общей суммы" ><br><br>
+                                </form>
+                                <input type="button" class="puy" value="Купить">
+                              </div>
+            </body>
+            
+    </html> 
+    
