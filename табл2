@@ -1,0 +1,27 @@
+<?php
+$name=$_GET["name"];
+$email=$_GET["email"];
+$rev=$_GET["rev"];
+$json = json_decode(file_get_contents("2.json", JSON_UNESCAPED_UNICODE), true);
+$json['review'][] = [
+ 'name' => $name,
+ 'email' => $email,
+ 'rev' => $rev,
+];
+file_put_contents('2.json', json_encode($json, JSON_UNESCAPED_UNICODE));
+$jsonString = file_get_contents("2.json");
+$rrow = json_decode($jsonString);
+$schiotchik=0;
+$Fot='https://st2.depositphotos.com/1439888/9411/i/600/depositphotos_94118248-stock-photo-female-user-avatar-icon.jpg';
+ $count = count($rrow->review);
+  echo '<table border=1 ><tr><th>Данные аккаунта</th><th>Отзывы пользователей</th></tr>';
+ foreach ($rrow->review as $number => $item) {
+ $schiotchik++;
+ $name = $item->name;
+ $email = $item->email;
+ $rev = $item->rev;
+ echo '<tr><td><img src='.$Fot.' width="200"><p><span>Имя: </span>'.$name.'</p><span>email: </span>'.$email.'<br><br></td><td>'.$rev.'<br></td></tr>';
+ if($schiotchik==$count)break;
+}
+echo '</tr></table>';
+?>
