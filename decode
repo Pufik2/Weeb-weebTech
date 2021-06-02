@@ -1,0 +1,17 @@
+<?php
+$tek=$_GET["tek"];
+$jsonString = file_get_contents("1.json");
+$rrow = json_decode($jsonString);
+$c=0;
+echo '<table border=1  ><tr><th></th><th></th><th></th></tr>';
+foreach ($rrow->news->new as $number => $item) {
+ $c++;
+ $tit = $item->tit;
+ $text = $item->text;
+ $img = $item->img;
+ $gif = $item->gif;
+echo '<tr><td><img src='.$img.' width="400"  align="center"></td><td><h1 align="center">'.$tit.'</h1>'.$text.'</td><td><img src='.$gif.' width="400"</td></tr>';
+ if($c==$tek)break;
+}
+echo '</tr></table>';
+?>
